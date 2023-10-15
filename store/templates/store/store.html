@@ -5,7 +5,7 @@
 
 <ul>
     {% for book in books %}
-        <li>
+        <li class="store-list">
             <a href="{% url 'book_details' book.id %}">
                 <strong>{{ book.author }}: {{ book.title }}</strong>
             </a>
