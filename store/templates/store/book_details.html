@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if hide_book_details %}
+        <p><a href="{% url 'store' %}">Back to Store</a></p>
+    {% else %}
+        <section class="book-details">
+            <p><strong>Author</strong>: {{ book.author }}</p>
+            <p><strong>Description</strong>: {{ book.description }}</p>
+            <p><strong>Date of Publication</strong>: {{ book.publish_date }}</p>
+            <p><strong>Price</strong>: {{ book.price }}</p>
+            <p><strong>Stock</strong>: {{ book.stock }}</p>
+            <p class="book-details-buttons">
+                <a 
+                    type="button" 
+                    class="btn btn-success" 
+                    role="button" 
+                    href="{% url 'edit_book' book.id %}">Edit</a>
+
+                <a 
+                    type="button" 
+                    class="btn btn-danger" 
+                    role="button" 
+                    href="{% url 'delete_book' book.id %}">Delete</a>
+
+                <a 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    role="button" 
+                    href="{% url 'store' %}">Cancel</a>
+            </p>
+        </section>
+    {% endif %}
+{% endblock %}
