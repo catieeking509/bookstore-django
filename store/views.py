@@ -6,7 +6,7 @@ from .models import Book
 
 def index(request):
     context = {
-        'title': 'Mystery Books Home',
+        'title': 'Mystery Books',
         'menu': 'home',
     }
     return render(request, 'store/index.html', context)
