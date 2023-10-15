@@ -1,5 +1,8 @@
 {% extends "base.html" %}
+{% load static %}  
 
 {% block content %}
-<p>welcome to mystery books</p>
+<p>Welcome to the mystery books homepage!</p>
+<img src="{% static 'base/image/spooky-cat.png' %}" alt="spooky cat" class="spooky-cat" />
+<p class="spooky-font">look at this spooky cat</p>
 {% endblock %}

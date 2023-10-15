@@ -28,6 +28,7 @@ main {
     margin: 10px;
     padding: 10px;
     background-color: #ba7d7da4;
+    text-align: center;
 }
 
 .navbar-brand, .page-logo {
@@ -38,6 +39,23 @@ main {
 .navbar {
     background-color: #BA7D7D;
     border: 10px solid #554441;
+}
+
+.spooky-cat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.spooky-font {
+    font-size: x-small;
+    font-style: italic;
+    text-align: right;
+    padding: 0 80px 0 0;
+    margin: 0;
+    font-weight: 600;
 }
 
 .store-book-links {
