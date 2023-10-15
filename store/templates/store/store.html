@@ -3,9 +3,9 @@
 {% block content %}
 <p>there {{ count|pluralize:"is,are" }} {{ count }} book{{ count|pluralize }} in the store</p>
 
-<ul>
+<ul class="store-list">
     {% for book in books %}
-        <li class="store-list">
+        <li>
             <a href="{% url 'book_details' book.id %}">
                 <strong>{{ book.author }}: {{ book.title }}</strong>
             </a>

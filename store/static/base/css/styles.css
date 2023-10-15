@@ -21,6 +21,7 @@ body {
     background-color: #554441;
     --bs-link-color: #141619;
     --bs-link-hover-color: #ddd1d2;
+    min-width: 300px;
 }
 
 main {
@@ -29,8 +30,9 @@ main {
     background-color: #ba7d7da4;
 }
 
-.page-logo {
+.navbar-brand, .page-logo {
     max-width: 150px;
+    margin: 0;
 }
 
 .navbar {
