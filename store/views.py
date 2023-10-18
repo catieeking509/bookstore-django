@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from .models import Book
 
-# Create your views here.
 
 
 def index(request):
@@ -91,7 +90,7 @@ def edit_book(request, book_id):
             book.price = request.POST.get('price')
             book.stock = request.POST.get('stock')
             book.save()
-            context['success_message'] = 'The book has been updated'
+            context['success_message'] = 'Update Complete'
         except:
             context['book_title'] = request.POST.get('title')
             context['author'] = request.POST.get('author')
@@ -99,7 +98,7 @@ def edit_book(request, book_id):
             context['publish_date'] = request.POST.get('publish_date')
             context['price'] = request.POST.get('price')
             context['stock'] = request.POST.get('stock')
-            context['error_message'] = 'Error updating book'
+            context['error_message'] = 'Update Error'
             context['display_form'] = True
     else:
         context['display_form'] = True
