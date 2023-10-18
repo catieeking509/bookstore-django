@@ -71,5 +71,7 @@ main {
     justify-content: space-evenly;
 }
 
-
-/*** MEDIA QUERIES ***/
+.book-form {
+    max-width: 50%;
+    margin: auto;
+}
