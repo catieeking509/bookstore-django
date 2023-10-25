@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-md">
+            <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="{% static 'base/image/logo.png' %}" alt="Mystery Books logo" class="d-inline-block align-text-top page-logo">
@@ -44,6 +44,9 @@
                             </li>
                         </ul>
                     </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div>
                         {% if request.user.is_authenticated %}
                                 Welcome, 
@@ -57,9 +60,6 @@
                                 Would you like to <a href="{% url 'admin:index' %}">Login</a>?
                         {% endif %}                         
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                 </div>
             </nav>
         </header>

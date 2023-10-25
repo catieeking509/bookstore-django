@@ -28,12 +28,12 @@ main {
     margin: 10px;
     padding: 10px;
     background-color: #ba7d7da4;
+    overflow: hidden;
+    overflow-wrap: break-word;
 }
 
 .title, .centered {
     text-align: center;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
 
 .navbar-brand, .page-logo {
@@ -44,6 +44,8 @@ main {
 .navbar {
     background-color: #BA7D7D;
     border: 10px solid #554441;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .spooky-cat {
@@ -65,12 +67,12 @@ main {
 
 .new-book-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.store-list, .book-details {
-    text-overflow: ellipsis;
+.book-details {
     overflow: hidden;
+    overflow-wrap: break-word;
 }
 
 .book-details-buttons {
@@ -81,4 +83,14 @@ main {
 .book-form {
     max-width: 50%;
     margin: auto;
+}
+
+/* *************************media queries ****************************/
+
+@media screen and (min-width: 992px) {
+    .navbar-expand-sm {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
