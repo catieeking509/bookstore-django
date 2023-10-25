@@ -32,6 +32,8 @@ main {
 
 .title, .centered {
     text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .navbar-brand, .page-logo {
@@ -64,6 +66,11 @@ main {
 .new-book-links {
     display: flex;
     justify-content: space-between;
+}
+
+.store-list, .book-details {
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .book-details-buttons {
