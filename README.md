@@ -1,6 +1,6 @@
 # Mystery Bookstore
 
-hosting: https://catieking509.pythonanywhere.com/
+hosting: https://cking509.pythonanywhere.com/
 
 This project offers a way to keep track of and input data pertaining to a bookstore.
 
@@ -21,7 +21,3 @@ I WANT TO check if the bookstore has a particular book
 SO THAT I know whether or not I should visit the store to buy the book
 
 ```
-
-## Project Notes
-
-The Mystery Bookstore uses python django, html, and css. In the future, I would like to imporve on my understanding of the deployment process, styling, and (as always) my time management.
